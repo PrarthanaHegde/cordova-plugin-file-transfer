@@ -71,7 +71,7 @@ public class FileTransfer extends CordovaPlugin {
     private static final String LOG_TAG = "FileTransfer";
     private static final String LINE_START = "--";
     private static final String LINE_END = "\r\n";
-    private static final String BOUNDARY =  "+++++";
+    private static final String BOUNDARY =   "" + System.currentTimeMillis() + "";
 
     public static int FILE_NOT_FOUND_ERR = 1;
     public static int INVALID_URL_ERR = 2;
